@@ -1,0 +1,2 @@
+1. logo and data on src
+2. img on public
