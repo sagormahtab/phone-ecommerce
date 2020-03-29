@@ -1,2 +1,38 @@
+0. Always start with console log on function and simple h1 msg on components
 1. logo and data on src
 2. img on public
+3. npm install --save bootstrap
+4. google font -> oswald and permanent marker to the index.html
+5. import "bootstrap/dist/css/bootstrap.min.css" on app.js
+6. fontawesome
+7. css variables: 20:00 on app.css
+8. by default bootstrap overwrites the font-family. so have to right !important
+9. <React.Fragment> let's us return multiple elements from component.
+10. Ager thekei plan kore banano. <ProductList> er bhetore return <Product>
+11. next plan: Details page,Cart page and Default(pagenotfound) page and write a "hello from navbar" type of content
+12. npm install --save react-router-dom
+13. Set the Route of each component
+14. import {Link} from 'react-router-dom' on Navbar.js
+15. ml-auto to move the nav item to right
+16. npm install --save styled-components
+17. export default use করলে কম্পোনেন্টের নাম লেখা লাগে না কারন ডিরেক্ট ফাইলের নাম ই export হয়। কিন্তু ভেতরের কোন কম্পোনেন্ট export করতে চাইলে নামের আগে export লেখা লাগে এবং import এর সময় {} এই ব্র্যাকেটের ভেতর ঐ কম্পোনেন্টের নাম লিখতে হয়।
+18. rem means root em. 1 em is 16px which is according to the size of default font.
+19. state={
+    products: []
+}
+20. .py-5 in bootstrap
+21. component এর প্যারামিটার ও কম্পোনেন্ট তৈরীর সাথে সাথেই দিয়ে দিচ্ছে চিন্তা করে, {name,title} এভাবে।
+22. context.js in src folder
+23. React.createContext() method. createContext comes with 2 object. One of them is Provider(which is assigned value) and another is Consumer.
+24. ProductProvider in top of router and ProductConsumer in the ProductList. ProductConsumer's arrow function takes an argument and returns the value. The value can be a simple hello string or an object.
+25. unique key is required for every mapped component
+26. data flow: context -> productlist->product
+27. to make big the image after hovering. transform: scale(1.2);
+28. transform: translate(100%, 100%)
+29. PropTypes for checking if the data is correct.
+30. JavaScript by default pass the value as reference from the data.js, if we want to get it as data we need to use a temp variable and store it on the temp and then set it using setState
+31. We can pass the props in styled component.
+32. later we created component modal and also something for modal. Modal is outside of the switch btw as it doesn't have any path. and the setup of modal is kinda similar to details.
+33. To remove an item from cart we just need to filter the Cart without the removable product. Also we need to set inCart = false for the removed product.
+34. for increment and decrement we need to use find() function.
+35. react-paypal-express-checkout > full example
